@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MalariaResult</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+
+<link rel="stylesheet" href="{{ url_for('static',filename='default.css') }}" media="all"/>
+<link rel="stylesheet" href="{{ url_for('static',filename='fonts.css') }}" media="all"/>
+
+<link rel="shortcut icon" href="favicon.ico">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<div id="header" class="container">
+	<div id="logo">
+		<h1><a href="#">Result</a></h1>
+		
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="/" accesskey="1" title="">Homepage</a></li>
+			<li><a href="/predict" accesskey="3" title="">Malaria Test</a></li>
+
+			
+		</ul>
+	</div>
+	</div>
+
+	<div class="container">
+		<p>The result is based on a trained deep learning model which provides 95% accuracy</p>
+<br><br><br>
+</div>
+<div  class="container">
+	
+	
+		{% with messages = get_flashed_messages() %}
+         {% if messages %}
+            
+               {% for message in messages %}
+               		<p><b>Result : <strong>{{ message }}</strong></b></p>
+               {% endfor %}
+            
+         {% endif %}
+      {% endwith %}
+	
+</div>
+
+<div class="container">
+
+	<img src="{{ url_for('static',filename='graph.jpg') }}" alt="Image Placeholder" height="400" width="500">
+</div>
+  
+
+
+</body>
+</html>

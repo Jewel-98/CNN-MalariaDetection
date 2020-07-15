@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Malaria Detector</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+
+<link rel="stylesheet" href="{{ url_for('static',filename='default.css') }}" media="all"/>
+<link rel="stylesheet" href="{{ url_for('static',filename='fonts.css') }}" media="all"/>
+
+
+
+</head>
+<body>
+<div id="header" class="container">
+	<div id="logo">
+		<h1><a href="#">Malaria Detector</a></h1>
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
+			<li><a href="#diagnosis" accesskey="3" title="">Malaria Test</a></li>
+			<li><a href="#page" accesskey="4" title="">Basic Info</a></li>
+			<li><a href="#featured" accesskey="5" title="">About Us</a></li>
+		</ul>
+	</div>
+</div>
+<div id="banner" class="imgcontainer">
+	 <div class="top-right" font-size="large">Stay Smart & act early<p>against Malaria</p></div>
+	
+</div>
+
+<div id="spage">
+	
+</div>
+
+
+<div id="diagnosis">
+
+	<a href="/predict" class="btn">GO TO TEST</a>
+</div>
+
+
+<div id="page" class="container">
+	<div class="boxA">
+		<h2>Consequences</h2>
+		<div class="box">
+			<a href="#" class="image image-full"><img src="{{ url_for('static',filename='pic01.png') }}" alt="" /></a>
+			
+		</div>
+		<p>Malaria is a deadly, infectious mosquito-borne disease which is prevalent across the globe. A delay in the right treatment can lead to complications and even death. Hence early and effective  detection of malaria can save lives. Nearly half the world’s population is at risk from malaria and there are over 200 million malaria cases and approximately 400,000 deaths due to malaria every year.</p>
+		
+	</div>
+
+	<div class="boxB">
+		<h2>Symptoms</h2>
+		<div class="box">
+			<a href="#" class="image image-full"><img src="{{ url_for('static',filename='pic02.png') }}" alt="" /></a>
+			
+		</div>
+		<p> The first symptoms – fever, headache, and chills – may be mild and difficult to recognize as malaria. Children with severe malaria frequently develop one or more of the following symptoms: severe anaemia, respiratory distress. In adults, multi-organ failure is also frequent. In malaria endemic areas, people may develop partial immunity, allowing asymptomatic infections to occur.</p>
+		
+	</div>
+
+	<div class="boxC">
+		<h2>Detection</h2>
+		<div class="box">
+			<a href="#" class="image image-full"><img src="{{ url_for('static',filename='pic03.png') }}" alt="" /></a>
+			
+		</div>
+		<p>Standard method of detection is diagnosis of thick blood smears. The diagnostic accuracy heavily depends on human expertise and can be adversely impacted by the inter-observer variability and the liability imposed by large-scale diagnoses in disease-endemic/resource-constrained regions. Thus, malaria detection is definitely an intensive manual process.</p>
+		
+	</div>
+</div>
+<div id="featured" class="container">
+	<div class="align-left">
+		
+		<h1>About Us</h1>
+	
+	</div>
+	<div class="align-right">
+		<p>AI coupled with technologies and frameworks are being used for the betterment of our society.<b> Health is Wealth</b> is perhaps a clinched quote yet very true! On understanding the fact that early and effective testing and detection of malaria can save lives, we aim at making malaria detection and diagnosis fast, easy and effective using <strong>Malaria Detector</strong>. Eventhough human expertise and experience is more considerable, this project can help in verifying the results and fast detection in disease-endemic regions.</p>	
+		
+	</div>
+</div>
+
+</body>
+</html>
